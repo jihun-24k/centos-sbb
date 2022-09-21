@@ -1,17 +1,15 @@
-package com.example.centossbb.controlller;
+package com.example.centossbb.home.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@RequestMapping("")
 @Controller
 public class HomeController {
 
-    @GetMapping("/")
+    @RequestMapping("/")
     @ResponseBody
-    public String hello(){
-        return "Hello SB";
+    public String showMain() {
+        return "<h1>Hello, SB!!!</h1>";
     }
 }
